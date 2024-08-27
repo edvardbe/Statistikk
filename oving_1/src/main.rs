@@ -37,17 +37,6 @@ fn standard_deviation(numbers: &[f64]) -> f64 {
     return (sum / (numbers.len() - 1) as f64).sqrt()
 }
 
-fn average_amount(numbers: &[f64]) -> f64 {
-    let mut sum = 0.0;
-    let mut count = 1.0;
-    let mut amount = 0.0;
-    for number in numbers {
-        sum += number*count;
-        count += 1.0;
-        amount += number;
-    }
-    return sum / amount;
-}
 
 fn correlation_coefficient(numbers1: &[f64], numbers2: &[f64]) -> f64 {
     let avg1 = average(numbers1);
@@ -56,7 +45,7 @@ fn correlation_coefficient(numbers1: &[f64], numbers2: &[f64]) -> f64 {
     for i in 0..numbers1.len() {
         sum += (numbers1[i] - avg1) * (numbers2[i] - avg2);
     }
-    return (sum / ((numbers1.len() - 1) as f64 * standard_deviation(numbers1) * standard_deviation(numbers2)))
+    return sum / ((numbers1.len() - 1) as f64 * standard_deviation(numbers1) * standard_deviation(numbers2))
 }
 
 fn linear_regression(numbers1: &[f64], numbers2: &[f64]) -> (f64, f64) {
