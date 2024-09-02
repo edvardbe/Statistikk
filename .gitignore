@@ -1,0 +1,6 @@
+venv/
+oving_*/target/
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
