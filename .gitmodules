@@ -1,3 +1,4 @@
-[submodule "Jupyter"]
-	path = Jupyter
+
+[submodule "istx100y2024"]
+	path = istx100y2024
 	url = https://github.com/imfdrift/istx100y2024
