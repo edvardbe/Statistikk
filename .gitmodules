@@ -1,6 +1,3 @@
-[submodule "istx100y2024"]
-	path = istx100y2024
-	url = git@github.com:imfdrift/istx100y2024.git
 [submodule "istt1003-30"]
 	path = istt1003-30
 	url = git@github.com:edvardbe/istt1003-30.git
